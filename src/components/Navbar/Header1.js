@@ -27,7 +27,9 @@ export const Header1 = () => {
                     <div className="mt-6 sm:-mx-2">
                         <div className="inline-flex w-full overflow-hidden rounded-lg shadow sm:w-auto sm:mx-2">
                             <a
-                                href="#"
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSep8IQF3RC9d63WdDdjc8zfqpZeKBIpqsRXZxMt4fqVZEtRuw/viewform?usp=pp_url" 
+                                target="_blank"
+
                                 className="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-600 sm:w-auto"
                             >
                                 <span className="mx-2">Offline support</span>
@@ -36,7 +38,8 @@ export const Header1 = () => {
 
                         <div className="inline-flex w-full mt-4 overflow-hidden rounded-lg shadow sm:w-auto sm:mx-2 sm:mt-0">
                             <a
-                                href="#"
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSep8IQF3RC9d63WdDdjc8zfqpZeKBIpqsRXZxMt4fqVZEtRuw/viewform?usp=pp_url"
+                                target="_blank"
                                 className="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white transition-colors duration-150 transform sm:w-auto bg-gradient-to-r from-blue-700 to-blue-900 hover:from-blue-600 hover:to-blue-600"
                             >
                                 <span className="mx-2">View Departments</span>

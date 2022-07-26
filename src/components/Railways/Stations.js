@@ -75,7 +75,7 @@ export const Stations = () => {
               <div className="relative mr-4 md:w-full lg:w-full xl:w-1/2 w-2/4">
                 <label
                   htmlFor="hero-field"
-                  className="leading-7 text-sm text-gray-600"
+                  className="leading-7 text-sm text-gray-700"
                 >
                   City Name
                 </label>
@@ -88,7 +88,7 @@ export const Stations = () => {
                   }}
                   name="city"
                   placeholder="Search"
-                  className="w-full bg-gray-100 rounded border bg-opacity-50 border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  className="w-full bg-white-100 rounded border bg-opacity-50 border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:bg-white-100 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
               <button
@@ -143,7 +143,8 @@ export const Stations = () => {
             <img
               className="object-cover  object-center rounded"
               alt="hero"
-              src={`https://source.unsplash.com/random/?railway&320x300`}
+              // src={`https://source.unsplash.com/search/photos?page=1&query=City`}
+              src={`https://source.unsplash.com/random/550x400/?Railways&${city}`}
             />
           </div>
         </div>
@@ -182,13 +183,13 @@ export const Stations = () => {
         </section>
       </section>
 
-      <section className="text-gray-600 bg-slate-400 body-font">
+      <section className="text-gray-600 my-4 bg-slate-400 body-font">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <img
               className="object-cover object-center rounded"
               alt="hero"
-              src={`https://source.unsplash.com/random/?railway&${city}&720x700`}
+              src={`https://source.unsplash.com/random/550x450/?Train&${city}`}
             />
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
@@ -275,8 +276,8 @@ export const Stations = () => {
           </h1>
           {traindetails.map((i) => {
             return (
-              <div className="container px-5 py-10 mx-auto">
-                <div className="lg:w-4/5 mx-auto flex flex-wrap">
+              <div className="container  px-5  py-10 mx-auto">
+                <div className="lg:w-4/5 bg-slate-200 rounded-lg p-4  mx-auto flex flex-wrap">
                   <div className="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
                     <h2 className="text-sm title-font text-gray-100 tracking-widest">
                       {i.train_num}
@@ -292,19 +293,19 @@ export const Stations = () => {
                     </div>
                 
                     <div className="flex border-t border-gray-200 py-2">
-                      <span className="text-gray-200">Train_From</span>
+                      <span className="text-gray-500">Train_From</span>
                       <span className="ml-auto text-gray-900">{i.train_from}</span>
                     </div>
                     <div className="flex border-t border-gray-200 py-2">
-                      <span className="text-gray-200">Train_To</span>
+                      <span className="text-gray-500">Train_To</span>
                       <span className="ml-auto text-gray-900">{i.train_to}</span>
                     </div>
                     <div className="flex border-t border-gray-200 py-2">
-                      <span className="text-gray-200">Arive Time</span>
+                      <span className="text-gray-500">Arive Time</span>
                       <span className="ml-auto text-gray-900">{i.data.arriveTime}</span>
                     </div>
                     <div className="flex border-t border-gray-200 py-2">
-                      <span className="text-gray-200">Departed Time</span>
+                      <span className="text-gray-500">Departed Time</span>
                       <span className="ml-auto text-gray-900">{i.data.departTime}</span>
                     </div>
                   
@@ -313,7 +314,8 @@ export const Stations = () => {
                   <img
                     alt="ecommerce"
                     className="lg:w-1/2 w-full lg:h-1/2 h-30 object-cover object-center rounded"
-                    src={`https://source.unsplash.com/420x330/?${i.name},railway,train,travel`}
+
+                    src={`https://source.unsplash.com/420x310/?${i.name},railway,train,travel`}
                   />
                 </div>
               </div>
